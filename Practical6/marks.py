@@ -7,7 +7,19 @@ print (marks)
 #show the box plots
 import matplotlib.pyplot as plt
 import numpy as np
-plt.boxplot(marks)
+plt.boxplot(marks,
+            labels= ["Rob"],
+            vert = True,
+            whis = 1.5,
+            patch_artist = True,
+            meanline = False,
+            showbox = True,
+            showcaps = True,
+            showfliers = True,
+            notch = False
+            )
+plt.title("IBI scores")
+plt.ylabel('scores')
 plt.show()
 #calculate average score
 avr=(45+36+86+57+53+92+65+45)/8
