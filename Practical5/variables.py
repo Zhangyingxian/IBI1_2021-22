@@ -8,6 +8,6 @@ if d>e:
 else:
  print ("2022 has the greatest number of new COVID-19 cases.")
 X = True
-Y = False
+Y = True
 W = X and Y
 print (W)
